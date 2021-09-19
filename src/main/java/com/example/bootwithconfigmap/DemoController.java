@@ -16,8 +16,7 @@ public class DemoController {
         if (prefix == null) {
             prefix = "Hello!";
         }
-
-        return String.format(greeterMessageFormat, prefix, "Rahul");
+        return String.format(greeterMessageFormat+" " + prefix +" "+ "Rahul");
     }
     
     @GetMapping("/sample")
